@@ -1,9 +1,27 @@
 /* @Jorgelisapa */
+
+/* CUSTOM PROPERTIES */
+:root {
+    /* var(--first-color) */
+    --first-color: #c84451;
+    /* var(--second-color) */
+    --second-color: #d6d6d6;
+    /* var(--third-color) */
+    --third-color: #f4f4f4;
+        /* var(--fourth-color) */
+    --fourth-color: #ffffff;
+
+    /* FONTS */
+    /* var(--main-font) */
+    --main-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+    /* BODY-STYLES */
 body {
     margin: 0 auto;
-    background-color: #f4f4f4;
+    background-color: var(--third-color);
     max-width: 900px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: var(--main-font);
 }
 
 
@@ -31,7 +49,7 @@ body {
 .header-brand__slogan {
     font-weight: 800;
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: var(--main-font); */
 }
 
 .header-menu {
@@ -53,29 +71,29 @@ body {
 
 .header-menu__link {
     text-decoration: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: var(--main-font); */
     font-size: 0.8em;
     font-weight: 700;
-    color: #C84451;
-    background-color: #D6D6D6;
+    color: var(--first-color);
+    background-color: var(--second-color);
     padding: 10px;
     display: block;
 }
 
 .header-menu__link:hover {
-    background-color: #C84451;
-    color: #D6D6D6;
+    background-color: var(--first-color);
+    color: var(--second-color);
 }
 
 
 /* MAIN-ARTICLE */
 .main-article {
     max-width: 100%;
-    background-color: white;
+    background-color: var(--fourth-color);
     display: flex;
     margin: 15px 0;
     border-radius: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: var(--main-font); */
 }
 
 .main-article__details {
@@ -95,7 +113,7 @@ body {
 
 .main-article__title-link {
     text-decoration: none;
-    color: #C84451;
+    color: var(--first-color);
     font-weight: bold;
 }
 
@@ -104,7 +122,7 @@ body {
 }
 
 .main-article__img {
-    border: 1px solid gray;
+    border: 1px solid var(--second-color);
     max-width: 35%;
     margin: 15px;
     padding: 4px;
@@ -121,7 +139,7 @@ body {
 
 .articles {
     max-width: 100%;
-    background-color: #FFFFFF;
+    background-color: var(--fourth-color);
     border-radius: 5px;
     overflow: hidden;
     padding: 0 10px;
@@ -147,7 +165,7 @@ body {
 
 .article__link {
     text-decoration: none;
-    color: #C84451;
+    color: var(--first-color);
 }
 
 .article__comments {
@@ -166,7 +184,7 @@ body {
 
 .article__title-link {
     text-decoration: none;
-    color: #C84451;
+    color: var(--first-color);
     font-size: .8em;
 
 }
@@ -177,7 +195,7 @@ body {
 
 .article__read-more {
     text-decoration: none;
-    color: #C84451;
+    color: var(--first-color);
     font-size: .6em;
 }
 
@@ -186,7 +204,7 @@ body {
 
 .side-articles {
     max-width: 100%;
-    background-color: white;
+    background-color: var(--fourth-color);
     margin: 15px 0;
     border-radius: 5px;
 }
@@ -230,15 +248,15 @@ body {
     font-size: .7em;
     font-weight: bold;
     padding: 5px;
-    background-color: #C84451;
-    color: #D6D6D6;
+    background-color: var(--first-color);
+    color: var(--second-color);
     border-radius: 5px;
 
 }
 
 .footer__repo:hover {
-    background-color: #D6D6D6;
-    color: #C84451;
+    background-color: var(--second-color);
+    color: var(--first-color);
 }
 
 .footer__copyright {
