@@ -262,3 +262,37 @@ body {
 .footer__copyright {
     font-size: .7em;
 }
+
+
+/* MEDIA-QUERIES */
+@media screen and (max-width: 600px) {
+
+    body {
+        margin: 10px;
+    }
+
+    .header-menu__link {
+        font-size: .6em;
+        padding: 10px 0;
+    }
+
+    .main-article {
+        display: block;
+    }
+
+    .main-article__details {
+        max-width: 100%;
+    }
+
+    .main-article__img {
+        max-width: 100%;
+    }
+
+    .article {
+        display: block;
+    }
+
+    .footer {
+        display: block;
+    }
+}
